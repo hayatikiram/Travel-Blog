@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #b4bfce;
+            color: #333;
+            transition: background 0.3s, color 0.3s;
+        }
+        header {
+            background: #014044;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .post, .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .post:hover, .project:hover {
+            transform: scale(1.05);
+        }
+        .dark-mode {
+            background: #222;
+            color: #ddd;
+        }
+        footer {
+            background: #02565c;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .post a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Blog in Sabah</h1>
+        <button class="toggle-dark" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Discover Sabah</h2>
+            <p>Explore some of the most beautiful and exciting places to visit in Sabah!</p>
+            <div class="blog-posts">
+                <div class="post">
+                    <a href="mount-kinabalu.html">
+                        <img src="mount-kinabalu.jpg" alt="Mount Kinabalu">
+                        <h3>Climbing Mount Kinabalu</h3>
+                        <p>Experience the breathtaking views from the highest peak in Southeast Asia.</p>
+                    </a>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63478.56107006278!2d116.51770878990915!3d6.0753114474988905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323ba2565e9224cb%3A0x2281c3fec0a9c05e!2sMount%20Kinabalu!5e0!3m2!1sen!2smy!4v1751420837721!5m2!1sen!2smy" 
+                    width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </div>
+                <div class="post">
+                    <a href="sipadan-island.html">
+                        <img src="sipadan-island.jpg" alt="Sipadan Island">
+                        <h3>Diving at Sipadan Island</h3>
+                        <p>Discover the vibrant marine life and crystal-clear waters of one of the world's best dive sites.</p>
+                    </a>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7959.067824496294!2d118.62355235606971!3d4.114755683504868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x321534ffcf670e7d%3A0x55dd166135d28e89!2sSipadan%20Island!5e0!3m2!1sen!2smy!4v1751420930624!5m2!1sen!2smy" 
+                   width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </div>
+                <div class="post">
+                    <a href="proboscis-monkeys.html">
+                        <img src="proboscis-monkey.jpg" alt="Proboscis Monkey">
+                        <h3>Wildlife Adventure in Taman Sepilok, Kinabatangan </h3>
+                        <p>Spot rare wildlife, including the famous proboscis monkeys, in this stunning rainforest.</p>
+                    </a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22451.215188143113!2d117.94239396039056!3d5.876468582033881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3238d8bef839264b%3A0x831a1b72cf3b7ddf!2sRainforest%20Discovery%20Centre%20(RDC)!5e0!3m2!1sen!2smy!4v1751421045496!5m2!1sen!2smy" 
+                    width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </div>
+                <div class="post">
+                    <a href="kokol-hill.html">
+                        <img src="kokol-hill.jpg" alt="Kokol Hill">
+                        <h3>Relaxing at Kokol Hill</h3>
+                        <p>Enjoy the stunning sunset view and the cool breeze at one of Sabah’s best hilltop retreats.</p>
+                    </a>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31855.122506786232!2d116.07944182376915!3d5.980088859320769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b6c06f8d9910b%3A0xe9d4e2b8d6b2f84f!2sKokol%20Hill!5e0!3m2!1sen!2smy!4v1614698770242!5m2!1sen!2smy" 
+                     width="60%" height="100" style="border:0;" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="post">
+                    <a href="cabana-retreat.html">
+                        <img src="cabana-retreat.jpg" alt="Cabana Retreat">
+                        <h3>Glamping at Cabana Retreat</h3>
+                        <p>Experience luxury camping on the beach with a breathtaking ocean view.</p>
+                    </a>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.50536947942106!2d116.50042702575468!3d6.516247343940486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323a59ee95bf01c9%3A0xd8f06d84437e8927!2sCabana%20Retreat!5e0!3m2!1sen!2smy!4v1751420358802!5m2!1sen!2smy" 
+                    width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </div>
+                <div class="post">
+                    <a href="bukit-bongol.html">
+                        <img src="bukit-bongol.jpg" alt="Bukit Bongol">
+                        <h3>Hiking at Bukit Bongol, Kota belud</h3>
+                        <p>Experience the scenic hills of Bukit Bongol with its stunning sunrise and rolling landscapes.</p>
+                    </a>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.62209045099!2d116.40526947581618!3d6.313274125568921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b008581dc1f15%3A0x44a30b9bbffb0ac0!2sBukit%20Bongol!5e0!3m2!1sen!2smy!4v1751420512784!5m2!1sen!2smy" 
+                    width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </div>
+                <div class="post">
+                    <a href="maragang-hill.html">
+                        <img src="maragang-hill.jpg" alt="Maragang Hill">
+                        <h3>Adventure at Maragang Hill</h3>
+                        <p>Enjoy panoramic views of Mount Kinabalu from the summit of Maragang Hill.</p>
+                    </a>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.62209045099!2d116.40526947581618!3d6.313274125568921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b008581dc1f15%3A0x44a30b9bbffb0ac0!2sBukit%20Bongol!5e0!3m2!1sen!2smy!4v1751420512784!5m2!1sen!2smy" 
+                   width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </div>
+                <div class="post">
+                <a href="tegudon-tourism-village.html">
+                    <img src="tegudon-tourism-village.jpg" alt="Tegudon Tourism Village">
+                    <h3>Camping at Tegudon Tourism Village</h3>
+                    <p>Experience camping by the river with a magnificent view of Mount Kinabalu.</p>
+                </a>
+                 <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.803561199076!2d116.52078957581598!3d6.2895310258363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323bac0e841cf547%3A0xa25b124a91240d80!2sTegudon%20Tourism%20Village%20-%20TTV!5e0!3m2!1sms!2smy!4v1741529369454!5m2!1sms!2smy" 
+                    width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </a>
+                </div>
+                <div class="post">
+                    <a href="mentoki-hideout.html">
+                        <img src="mentoki-hideout.jpg" alt="Mentoki Hideout">
+                        <h3>Camping at Mentoki Hideout</h3>
+                        <p>Stay in a hidden paradise surrounded by nature, with a magnificent view of Mount Kinabalu.</p>
+                    </a>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.703862947271!2d116.61412307581536!3d6.035316028642135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b97b581e1bc85%3A0x1616cfa1de280b15!2sMentoki%20Hideout%20Campsite!5e0!3m2!1sen!2smy!4v1751420588161!5m2!1sen!2smy" 
+                    width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </div>
+                <div class="post">
+                        <a href="bukit-botak.html">
+                            <img src="bukit botak.jpg" alt="Bukit Botak">
+                            <h3>Hiking at Bukit Botak, Sepanggar</h3>
+                            <p>Discover the top hiking trails in Sabah, with a breathtaking sunset and ocean views.</p>
+                    </a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.378729809696!2d116.13580763592418!3d6.079561993931926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b13c8be6d001b%3A0x62e406affca72c9e!2sBukit%20Botak!5e0!3m2!1sen!2smy!4v1751420723456!5m2!1sen!2smy" 
+                    width="60%" height="100" style="border:0;" loading="lazy">
+                </iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ytkir. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
